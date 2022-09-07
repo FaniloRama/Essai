@@ -8,12 +8,12 @@ jobs:
     env:
       fanilo: 15
     steps:
-    - uses: actions/checkout@v3
-    - name: Hello World
-      run: echo $variable
+      - uses: actions/checkout@v3
+      - name: Hello World
+        run: echo $variable
   jobs2:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Hello World
-      run: echo $fanilo
+      - uses: actions/checkout@v3
+      - name: Hello World
+        run: echo $fanilo
