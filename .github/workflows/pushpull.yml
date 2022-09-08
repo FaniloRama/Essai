@@ -1,11 +1,12 @@
 name: pushpull
-on: [push, pull]
+on: [push, pull_request]
 env:
   variable: C'est un push!
   variable2: C'est une pull request!
 jobs:
   jobs1:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v3
       - name: push
