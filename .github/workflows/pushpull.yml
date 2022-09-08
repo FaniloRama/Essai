@@ -1,9 +1,7 @@
 name: pushpull
-on: [push]
+on: [push,pull]
 env:
   variable: C'est un push!
-on: [pull]
-env:
   variable2: C'est une pull request!
 jobs:
   jobs1:
