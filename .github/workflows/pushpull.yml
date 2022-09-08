@@ -1,5 +1,5 @@
 name: pushpull
-on: [push,pull]
+on: [push, pull]
 env:
   variable: C'est un push!
   variable2: C'est une pull request!
