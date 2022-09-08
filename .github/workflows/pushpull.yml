@@ -1,0 +1,19 @@
+name: pushpull
+on: [push]
+env:
+  variable: var1
+jobs:
+  jobs1:
+    runs-on: ubuntu-latest
+    env:
+      variable2: var2
+    steps:
+      - uses: actions/checkout@v3
+      - name: push
+        run: echo C'est un push!
+  jobs2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name:pull
+        run: echo C'est un pull request!
