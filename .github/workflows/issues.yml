@@ -1,5 +1,5 @@
 name: issue_open
-on:
+on: [push]
   issues:
     types: [opened]
 env:
